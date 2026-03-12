@@ -2,7 +2,7 @@
 
 A state-of-the-art, full-stack AI Image Generation platform that turns your imagination into breathtaking visual reality. Built with a premium dark-aesthetic UI, advanced parametric controls, and a social community gallery.
 
-![AI Art Generator Preview](https://via.placeholder.com/1200x600/000000/FFFFFF?text=AI+Art+Generator+Interface+Preview)
+![AI Art Generator Preview](screenshots/landing.png)
 
 ## ✨ Why This Project?
 
@@ -34,6 +34,24 @@ A state-of-the-art, full-stack AI Image Generation platform that turns your imag
 
 ---
 
+## 📷 Screenshots
+
+### 🏠 Landing Page
+![Landing Page](screenshots/landing.png)
+
+### 🎨 Image Generation
+![Generation Interface](screenshots/generate.png)
+
+### 🏺 Community Gallery
+![Community Gallery](screenshots/gallery.png)
+
+### 🔐 Authentication (Login & Signup)
+| Login | Signup |
+|-------|--------|
+| ![Login](screenshots/login.png) | ![Signup](screenshots/signup.png) |
+
+---
+
 ## 💻 Tech Stack
 
 - **Frontend**: `Next.js 14+`, `React`, `Tailwind CSS`, `Framer Motion`, `Lucide React`
@@ -52,7 +70,19 @@ Follow these steps to get the project up and running on your local machine.
 - **Node.js 18+** installed.
 - A **Hugging Face API Key** (Get it free at [huggingface.co](https://huggingface.co/settings/tokens)).
 
-### 1️⃣ Backend Setup (FastAPI)
+### ⚡ Fast Track: Run Everything with One Command
+
+If you have both Python and Node.js installed and configured, you can start both the backend and frontend simultaneously from the root directory:
+
+```bash
+python main.py
+```
+
+*This will launch the backend at `http://localhost:8000` and the frontend at `http://localhost:3000`.*
+
+---
+
+### 1️⃣ Backend Setup (FastAPI) [Manual]
 
 1. **Navigate to the backend directory**:
    ```bash
@@ -122,3 +152,7 @@ Follow these steps to get the project up and running on your local machine.
 ---
 
 *Made with ❤️ for AI Art Enthusiasts.*
+
+
+python -m uvicorn main:app --reload --port 8000 //backend
+npx next dev -p 3000 //frontend
